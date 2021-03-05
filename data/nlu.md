@@ -5,12 +5,15 @@
 - good morning
 - good evening
 - hey there
+- hoi
+- Hi
 
 ## intent:goodbye
 - bye
 - goodbye
 - see you around
 - see you later
+- bey
 
 ## intent:affirm
 - yes
@@ -18,6 +21,7 @@
 - of course
 - that sounds good
 - correct
+- okay
 
 ## intent:deny
 - no
@@ -36,6 +40,7 @@
 - I am feeling very good
 - I am great
 - I'm good
+- good
 
 ## intent:mood_unhappy
 - sad
@@ -48,9 +53,11 @@
 - not very good
 - extremely sad
 - so sad
+- sd
 
 ## intent:bot_challenge
 - are you a bot?
 - are you a human?
 - am I talking to a bot?
 - am I talking to a human?
+- are you a bot
