@@ -8,7 +8,7 @@ nginx:
   service:
     # connect LoadBalancer directly to VMs' internal IP
     # You get this value with: $ hostname -I
-    externalIPs: [10.164.0.2]
+    externalIPs: [10.164.0.3]
 rasax:
     # initialUser is the user which is created upon the initial start of Rasa X
     initialUser:
@@ -32,7 +32,7 @@ rasa:
       rasaProduction:
         replicaCount: 1
       rasaWorker:
-        replicaCount: 0
+        replicaCount: 1
     additionalChannelCredentials:
 #      facebook:
 #        verify: "Kris"
