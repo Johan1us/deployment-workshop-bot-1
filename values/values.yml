@@ -1,9 +1,3 @@
-# debugMode enables / disables the debug mode for Rasa and Rasa X
-debugMode: true  # set to false in production
-app:
-  # from microk8s build-in registry
-  name: johan1us/house_of_barbers_action_server
-  tag: 1
 nginx:
   service:
     # connect LoadBalancer directly to VMs' internal IP
@@ -33,25 +27,6 @@ rasa:
         replicaCount: 1
       rasaWorker:
         replicaCount: 1
-    additionalChannelCredentials:
-#      facebook:
-#        verify: "Kris"
-#        secret: "55b83d9384460afa9798d5288fe79efa"
-#        page-access-token: "EAAI8QKRzYhkBACoiwvTj7DVQ4G3c5TWcKTxKKRjErYwu0whIltVGBX0LKKf6W7JaesZBNVQwjkszbtmvLtS4o2JWizPHms7ornA8TEGvCgXZAf6QtCp4BZA9KuwrO4DWmkC4fxOIVeS7pVTdJBg1XsZBbL9nuiJWUf0092WJvQZDZD"
-      rest:
-      actions.channel_fb_kris.FacebookInput:
-        verify: "kris"
-        secret: "898847f04757603624a6e1bfaf8cdcfe"
-        page-access-token: "EAAD2yZCjjooUBALbyQdHUBbujBDLhINZCWJIy1tYbfDupq88IFZC2fdGr9X3DiZCrrMb8ago4RO5pgSk0NSvpzNjQuZBdfHTzZCoOzXZAYilLCWMhdl0BPSQLMvWutfc9sNg6tS1B8AzXVdCk13xpz6e2NllC2NkCdgg2agdpyVSwZDZD"
-      actions.channel_fb_kris_2.FacebookInput:
-        verify: "kris"
-        secret: "adc3665d8729e7d2c649b6eb0fc268a5"
-        page-access-token: "EAAUEsprc96ABALwRaVYRsaaZAACZCIpQKsl9SpBnv8TZAJ7X0yL8TtkjkZA7Dlmcx8DqORce6AV6JZCA3ndWyZB0lq6cbzBlgOSAs4nUxbxyJ86sySWWqAzyLxPZCtBH6q7yiOvwAuelwdub58tHn4FK4wNYrZBr4b2mL3CfeMLTOQZDZD"
-      actions.channel_fb_kris_3.FacebookInput:
-        verify: "kris"
-        secret: "8e6c5f538156d3e068b904d4379b9d70"
-        page-access-token: "EAALfr1YWKiEBAGQp7skZBZAS6IASzM1estrt7V5SMExlV7kV8pIZBUDgS6DEZBUra4rM9QrKRdyoDVg0osOZA2ddlZB6B8hT6Fd2g94GEYUuRWguYY1jagiSAyiFWycNprJjgTNiclEd7ZBknPfIxX01aVS9k0IdFqtS3Kx6tT7OwZDZD"
-
 rabbitmq:
     # rabbitmq settings of the subchart
     rabbitmq:
