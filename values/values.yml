@@ -1,0 +1,5 @@
+nginx:
+  service:
+    # connect LoadBalancer directly to VMs' internal IP
+    # You get this value with: $ hostname -I
+    externalIPs: [10.164.0.3]
